@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script defer src="js/app.js"></script>
+        <title>Mortgage repayment calculator</title>
+    </head>
+
+    <body>
+        <main>
+            <section class="container">
+                <div class="mortgage__form">
+                    <h1 class="mortgage__header">
+                        Mortgage Calculator
+                        <span class="clear__all">Clear All</span>
+                    </h1>
+
+                    <form action="#" class="form">
+                        <fieldset>
+                            <label for="mortgage__amount">Mortgage Amount</label>
+                            <div class="input__group">
+                                <input
+                                    type="text"
+                                    name="text"
+                                    id="mortgage__amount"
+                                    class="mortgage__amount"
+                                    inputmode="numeric"
+                                    required
+                                />
+                                <span class="icon icon-sign">£</span>
+                            </div>
+                            <p class="mortgage__amount-error"></p>
+                        </fieldset>
+
+                        <fieldset class="mortgage__flex">
+                            <div>
+                                <label for="mortgage__term">Mortgage Term</label>
+                                <div class="input__group">
+                                    <input
+                                        type="number"
+                                        name="number"
+                                        id="mortgage__term"
+                                        class="mortgage__term"
+                                        required
+                                    />
+                                    <span class="icon icon-term">years</span>
+                                </div>
+                                <p class="mortgage__term-error"></p>
+                            </div>
+
+                            <div>
+                                <label for="mortgage__interest-rate">Interest Rate</label>
+                                <div class="input__group">
+                                    <input
+                                        type="number"
+                                        name="number"
+                                        id="mortgage__interest-rate"
+                                        class="mortgage__interest-rate"
+                                        step="0.01"
+                                        required
+                                    />
+                                    <span class="icon icon-rate">%</span>
+                                </div>
+                                <p class="mortgage__interest-error"></p>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Mortgage Type</legend>
+
+                            <div class="mortgage__type--container">
+                                <input
+                                    type="radio"
+                                    name="radio"
+                                    id="mortgage__type--repayment"
+                                    class="mortgage__type"
+                                    data-type="repayment"
+                                    required
+                                />
+                                <label for="mortgage__type--repayment" class="mortgage__type--label"
+                                    ><span class="mortgage__type--radio"></span>Repayment</label
+                                >
+                            </div>
+
+                            <div class="mortgage__type--container">
+                                <input
+                                    type="radio"
+                                    name="radio"
+                                    id="mortgage__type--interest"
+                                    class="mortgage__type"
+                                    data-type="interest"
+                                    required
+                                />
+                                <label for="mortgage__type--interest" class="mortgage__type--label"
+                                    ><span class="mortgage__type--radio"></span>Interest Only</label
+                                >
+                            </div>
+                            <p class="mortgage__type-error"></p>
+                        </fieldset>
+
+                        <button type="button" class="mortgage__btn">
+                            <svg class="icon-calculator">
+                                <use xlink:href="assets/images/icon-calculator.svg#icon"></use>
+                            </svg>
+                            Calculate Repayments
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Mortgage result display -->
+                <div class="mortgage__result">
+                    <div class="result__empty--state">
+                        <svg class="illustration-empty">
+                            <use xlink:href="assets/images/illustration-empty.svg#icon-empty"></use>
+                        </svg>
+                        <h2 class="empty--state-header">Results shown here</h2>
+                        <p class="empty--state-description">
+                            Complete the form and click “calculate repayments” to see what your monthly repayments would
+                            be.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
