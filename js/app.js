@@ -23,7 +23,7 @@ const iconSign = document.querySelector('.icon-sign');
 const iconTerm = document.querySelector('.icon-term');
 const iconRate = document.querySelector('.icon-rate');
 
-const isValidDecimalNumber = /^(?!0$)(?!0\d)\d+(\.\d+)?$/;
+const isValidDecimalNumber = /^\d+(\.\d{1,2})?$/;
 const isValidWholeNumber = /^[1-9]\d*$/;
 
 const MIN_TERM = 5;
