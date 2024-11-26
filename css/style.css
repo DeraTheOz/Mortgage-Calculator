@@ -273,6 +273,9 @@ legend {
     padding: 2rem;
     max-width: 100%;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Empty State start */
