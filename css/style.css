@@ -304,6 +304,7 @@ legend {
 /* Completed results start */
 .result__display {
     min-height: 100%;
+    min-width: 16rem;
 }
 
 .display__header--description {
@@ -311,7 +312,6 @@ legend {
 }
 
 .display__mortgage--calculated {
-    min-width: 16rem;
     margin: 2rem 0;
     padding: 1.5rem;
     border-top: 4px solid var(--Lime);
