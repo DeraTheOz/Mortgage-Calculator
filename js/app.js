@@ -209,6 +209,10 @@ class UI {
         this._clearInputs.addEventListener('click', e => {
             this._form.reset();
             this._clearMortgageResults();
+            this.inputs.amount = null;
+            this.inputs.term = null;
+            this.inputs.rate = null;
+            this.inputs.type = null;
             mortgageResultEmpty.style.display = 'flex';
         });
     }
