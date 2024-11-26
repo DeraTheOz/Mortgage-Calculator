@@ -69,6 +69,7 @@ legend {
     font-size: 1rem;
     font-weight: 700;
     padding: 0.8rem;
+    height: 3rem;
     border: 1px solid var(--Slate-500);
     border-radius: 4px;
     transition: all 0.2s ease-in;
@@ -178,6 +179,7 @@ legend {
     align-items: center;
     border: 1px solid currentColor;
     padding: 0.8rem;
+    height: 3rem;
     border-radius: 4px;
     transition: all 0.2s ease-in;
     cursor: pointer;
